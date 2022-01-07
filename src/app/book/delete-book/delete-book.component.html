@@ -7,8 +7,8 @@
         <p>Tác giả: {{book.author}}</p>
         <p>Mô tả</p>
         <p>{{book.description}}</p>
-          <button mat-button mat-dialog-close="" color="warn">Cancel</button>
-          <button mat-raised-button color="accent" (click)="deleteBook()">Delete</button>
+          <button mat-button mat-dialog-close="" class="btn btn-outline-primary">Cancel</button>
+          <button mat-raised-button  class="btn btn-outline-danger"  (click)="deleteBook()">Delete<mat-icon>delete_outline</mat-icon></button>
       </mat-card>
     </div>
   </div>

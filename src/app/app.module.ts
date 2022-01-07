@@ -17,6 +17,8 @@ import {MatButtonModule} from "@angular/material/button";
 import { EditBookComponent } from './book/edit-book/edit-book.component';
 import { DeleteBookComponent } from './book/delete-book/delete-book.component';
 import { DetailBookComponent } from './book/detail-book/detail-book.component';
+import {MatIconModule} from "@angular/material/icon";
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { DetailBookComponent } from './book/detail-book/detail-book.component';
     CreateBookComponent,
     EditBookComponent,
     DeleteBookComponent,
-    DetailBookComponent
+    DetailBookComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { DetailBookComponent } from './book/detail-book/detail-book.component';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   entryComponents:[CreateBookComponent,EditBookComponent,DeleteBookComponent],
   providers: [],

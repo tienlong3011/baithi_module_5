@@ -1,8 +1,8 @@
 <div class="container">
-  <h1>Sửa sách</h1>
   <div class="row">
     <div class="col-12 text-center" style="margin-top: 20px">
       <mat-card style="margin: 50px 0">
+        <h1 style="text-align: center; color: brown; font-size: xx-large ">Edit Book</h1>
         <form class="create-category" #form = "ngForm" (ngSubmit)="form.form.valid && ngSubmit()" novalidate>
           <mat-error class="alert alert-primary">{{status}}</mat-error>
           <mat-form-field style="width: 350px" appearance="outline">
@@ -24,8 +24,8 @@
           </mat-form-field>
           <br>
           <mat-dialog-actions>
-            <button mat-button mat-dialog-close="" (click)="back()">Cancel</button>
-            <button mat-raised-button color="accent">Edit</button>
+            <button mat-button mat-dialog-close="" (click)="back()" class="btn btn-outline-danger">Cancel</button>
+            <button mat-raised-button class="btn btn-outline-success">Edit<mat-icon>edit</mat-icon></button>
           </mat-dialog-actions>
         </form>
       </mat-card>
